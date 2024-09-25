@@ -1,0 +1,92 @@
+
+body {
+    color:rgb(63, 116, 214);
+    background-color: khaki;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1 { font-size:36pt; }
+h3 { font-size:18pt; }
+.img { border-radius: 50px;   
+    
+}
+.fundo { background-color: rgb(238, 138, 138);}
+
+/* produtos */
+
+.caixa {
+    margin: 20px 200px;
+    display: flex;
+}
+
+.direita {
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.principal {
+    padding: 30px 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagemprincipal {
+    height: 390px;
+    width: auto;
+}
+
+.outras {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    align-items: center;
+}
+
+.imagembox {
+    margin: 0px 8px 8px 0px ;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem {
+    height: 90%;
+    width: auto;
+}
+
+.detalhes {
+    width: 50%;
+    padding-left: 50px;
+
+}
+
+.enzo {
+    width: 100%;
+    justify-content: space-between;
+};
+
+td .enzo {
+    height: 30px;
+};
+
+button:hover {
+    background-color: darkgreen;
+}
+
+.produto:hover {
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.imagem:hover {
+    border: 2px solid white;
+    border-radius: 10px;
+}

@@ -1,18 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 body {
-    color:#F1FAEE;
-    background-color: #A8DADC;
+    color:#000000;
+    background-color: #ffffff;
     text-align: center;
-    font-family: 'Poppins Sans', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Quicksand", sans-serif;;
 }
 h1 { font-size:36pt; }
 h3 { font-size:18pt; }
-.img { border-radius: 50px;   
-    
-}
-.fundo { background-color: #1D3557;}
 
-/* produtos */
+    
+
+.fundo {    
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 8px ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
 .caixa {
     margin: 20px 200px;
@@ -21,7 +24,8 @@ h3 { font-size:18pt; }
 
 .direita {
     width: 50%;
-    border: 1px solid black;
+    height: 50%;
+    border: 1px solid #8FC0A9;
     border-radius: 10px;
 }
 
@@ -35,7 +39,9 @@ h3 { font-size:18pt; }
 
 .imagemprincipal {
     height: 390px;
-    width: auto;
+    width: 500px;
+    border: 3px solid #8FC0A9; 
+    border-radius: 8px;
 }
 
 .outras {
@@ -47,19 +53,17 @@ h3 { font-size:18pt; }
 
 .imagembox {
     margin: 0px 8px 8px 0px ;
-    height: 100px;
-    width: 100px;
     cursor: pointer;
-    border: 1px solid black;
-    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .imagem {
-    height: 90%;
-    width: auto;
+    height: 100px;
+    width: 100px;
+    border: 3px solid #8FC0A9; 
+    border-radius: 8px;
 }
 
 .detalhes {
@@ -81,12 +85,74 @@ button:hover {
     background-color: darkgreen;
 }
 
-.produto:hover {
-    border: 2px solid white;
-    border-radius: 10px;
+.imagem:hover {
+    transform: scale(1.05);
 }
 
-.imagem:hover {
-    border: 2px solid white;
-    border-radius: 10px;
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #8FC0A9;;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+fieldset {
+    border: none;
+}
+legend {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    width: 100%;
+}
+input[type="date"] {
+    width: 100%;
+}
+.campo input[type="text"], .campo input[type="date"] {
+    max-width: 400px;
+}
+.campo select {
+    max-width: 200px;
+}
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+.col {
+    border: 2px solid #8FC0A9; 
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    width: 200px;
+    transition: transform 0.2s; 
+}
+
+.col:hover {
+    transform: scale(1.05); 
+}
+

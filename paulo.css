@@ -89,7 +89,7 @@ button:hover {
     transform: scale(1.05);
 }
 
-form {
+.pedro {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;

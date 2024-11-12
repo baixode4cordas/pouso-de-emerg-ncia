@@ -26,7 +26,7 @@ h3 { font-size:18pt; }
 .direita {
     width: 50%;
     height: 50%;
-    border: 1px solid #8FC0A9;
+    border: 1px solid white;
     border-radius: 10px;
 }
 
@@ -41,7 +41,7 @@ h3 { font-size:18pt; }
 .imagemprincipal {
     height: 390px;
     width: 500px;
-    border: 3px solid #8FC0A9; 
+    border: 3px solid white; 
     border-radius: 8px;
 }
 
@@ -63,7 +63,7 @@ h3 { font-size:18pt; }
 .imagem {
     height: 100px;
     width: 100px;
-    border: 3px solid #8FC0A9; 
+    border: 3px solid white; 
     border-radius: 8px;
 }
 
@@ -144,8 +144,6 @@ button:hover {
 }
 
 .col {
-    border: 2px solid #8FC0A9; 
-    border-radius: 8px;
     padding: 10px;
     text-align: center;
     margin: 10px;

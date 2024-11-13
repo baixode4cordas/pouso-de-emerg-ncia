@@ -14,26 +14,31 @@ outras[2].onclick = ()=> {
 // valor rolezinho
 
 
-function cidade() {
-    var partida = document.getElementById("segundo").value;
-    return parseInt(partida); 
+
+function calcularTotal() {
+    const quantidade = document.getElementById('quantidade').value;
+    const preco = document.getElementById('preco').value;
+    const total = quantidade * preco;
+
+    document.getElementById('valor').value = total || 0; 
 }
 
+document.addEventListener("DOMContentLoaded", function() {
 
-function compra() {
-    var quantidade = document.getElementById("primeiro").value;
-    var valorUnitario = 6424;
-    
-    var totalPassagem = quantidade * valorUnitario;
-    
-    var valorCidade = cidade();
-    
-    var valorTotal = totalPassagem + valorCidade;
-    
-    document.getElementById("terceiro").value = valorTotal
-}
+//    data só no futuro
+   
+    var hoje = new Date();
+    var dia = hoje.getDate();
+    var mes = hoje.getMonth() + 1; 
+    var ano = hoje.getFullYear();
 
-let ans = document.getElementById("primeiro");
-ans.addEventListener('keyup', compra);
-let partidaSelect = document.getElementById("segundo");
-partidaSelect.addEventListener('change', compra);
+
+    if(dia < 10) dia = '0' + dia;
+    if(mes < 10) mes = '0' + mes;
+
+
+    var dataAtual = ano + '-' + mes + '-' + dia;
+
+
+    document.getElementById("data").setAttribute("min", dataAtual);
+});

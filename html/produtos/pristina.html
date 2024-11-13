@@ -19,28 +19,28 @@
 
 </head>
 
-<nav style="background-color: #8FC0A9;" class="navbar navbar-expand-lg navbar-dark">
-  <a class="navbar-brand" href="../../index.html"> Pouso de Emergência </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="../viagens.html">Viagens</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="../sobrenos.html">Sobre nós</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="../celso.html">Cadastro</a>
-      </li>
-       </ul> 
-      </nav>
+<body>
+  <nav style="background-color: #000000;" class="navbar navbar-expand-lg navbar-dark shadow-lg p-3">
+      <a class="navbar-brand" href="../../index.html"> Pouso de Emergência </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                  <a class="nav-link" href="../viagens.html">Viagens</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="../sobrenos.html">Sobre nós</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="../celso.html">Cadastro</a>
+              </li>
+          </ul>
       </div>
-</nav>
+  </nav>
 
-<h1>Pristina</h1>
+<h1 class="display-3 animate__animated animate__zoomIn">Pristina</h1>
 
 <div class="caixa">
     <div class="direita">
@@ -52,47 +52,47 @@
             <div class="imagembox"><img src="https://www.sonaesierra.com/wp-content/uploads/2023/03/Prishtina-Mall-2-scaled.jpg" class="imagem"></div>
             <div class="imagembox"><img src="https://thewandertraveler.com/wp-content/uploads/2023/10/pristina-kosovo.jpg" class="imagem"></div>
 
+            </div>
+          </div>
 
-        </div>
+          <div class="detalhes">
+            <h1 class="display-3 animate__animated animate__fadeInDown">Passagem só de ida para Pristina, Kosovo</h1>
+              <p class="lead animate__animated animate__fadeInUp">Disponível</p>
+              <h2 class="lead animate__animated animate__fadeInUp">R$1.500</h2>
+              <form class="img-fluid animate__animated animate__zoomIn" action="../tela de compra.html" onsubmit="calcularTotal()">
+                  <table cellspacing="0" class="enzo">
+                      <tr>
+                          <td>Quantidade</td>
+                          <td align="right"><input type="number" id="quantidade" name="quantidade" required onchange="calcularTotal()"></td>
+                      </tr>
+                      <tr>
+                          <td>Data de Partida:</td>
+                          <td align="right"><input type="date" id="data" name="data" required></td>
+                    
+                        </tr>
+  
+                  </table> <br>
+  
+                  <!-- Campos hidden para passar o destino e o valor total -->
+                  <input type="hidden" name="destino" value="Pristina, Kosovo">
+                  <input type="hidden" id="valor" name="valor">
+                  <input type="hidden" id="preco" name="preco" value="1500">
+  
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46940.211585419136!2d21.117527700883997!3d42.66637271822323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549ee605110927%3A0x9365bfdf385eb95a!2sPristina!5e0!3m2!1spt-BR!2sbr!4v1727318475510!5m2!1spt-BR!2sbr" 
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           <h4>Descrição:</h4>
+            <h6>País: <img src="http://www.flags.net/images/smallflags/KOSV0001.GIF" alt="" width="25px"> Kosovo</h6>
+           <h6>Linguas: <img src="http://www.flags.net/images/smallflags/ALBA0001.GIF" alt="" width="25px"> Albanês <img src="http://www.flags.net/images/smallflags/SERB0001.GIF" alt="" width="25px"> Sérvio</h6> 
+           <p>Capital do Kosovo, país de reconhecimento limitado, e reconhecida no Brasil como parte da Sérvia, Pristina é um destino acessível para você graças a Pouso de Emergência. Apesar de constantes ameaças da Sérvia desde 2008, quando declarou sua independência, o Kosovo é um país que vem crescendo econômica e culturalmente em anos recentes, podendo oferecer diversas oportunidades para os que desejam ir para lá. Considerando que o Brasil atualmente não reconhece o Kosovo como um país legítimo, no caso de você ser uma pessoa procurada pela lei, será impossível um pedido de extradição a nação balcânica, já que, para a república federativa, ela não existe. Caso você seja parte da comunidade LGBTQIA+, é válido informar que o Kosovo é um dos países da sua região mais progressistas nesse aspecto, com o seu presidente já deixando clara a sua intenção de legalizar o casamento de pessoas do mesmo gênero no país, o que o tornaria a terceira nação balcânica a fazer isso e a primeiro do mundo de maioria islâmica. </p>
+           <button class="btn btn-success">Comprar</button>
+              </form>
+          </div>
+      </div>
 
-    </div>
-    <div class="detalhes">
-        <h1> Passagem só de ida para Pristina, Kosovo</h1>
-        <p>Disponível</p>
-        <h2>R$1.500</h2>
-        <table cellspacing="0" class="enzo"> 
-            <tr>
-                <td>Quantidade</td>
-                <td align="right"><input type="number" id="primeiro"></td>
-            </tr>
-            <tr>
-                <td>Local de Partida</td>
-                <td align="right"> <select name="Partida" id="segundo">
-                    <option value="150" id="rj">Rio de Janeiro</option>
-                    <option value="0" id="sp">São Paulo</option>
-                    <option value="500" id="cu">Curitiba</option>
-                    <option value="200" id="bh">Belo Horizonte</option>
-                  </select> </td>
-            </tr>
-            <tr>
-                <td>Valor Total</td>
-                <td align="right"><input type="number" id="terceiro"></td>
-            </tr>
-            
-
-
-
-        </table> <br>
-           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46940.211585419136!2d21.117527700883997!3d42.66637271822323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549ee605110927%3A0x9365bfdf385eb95a!2sPristina!5e0!3m2!1spt-BR!2sbr!4v1727318475510!5m2!1spt-BR!2sbr" 
-                   width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <h4>Descrição:</h4>
-             <h6>País: <img src="http://www.flags.net/images/smallflags/KOSV0001.GIF" alt="" width="25px"> Kosovo</h6>
-            <h6>Linguas: <img src="http://www.flags.net/images/smallflags/ALBA0001.GIF" alt="" width="25px"> Albanês <img src="http://www.flags.net/images/smallflags/SERB0001.GIF" alt="" width="25px"> Sérvio</h6> 
-            <p>Capital do Kosovo, país de reconhecimento limitado, e reconhecida no Brasil como parte da Sérvia, Pristina é um destino acessível para você graças a Pouso de Emergência. Apesar de constantes ameaças da Sérvia desde 2008, quando declarou sua independência, o Kosovo é um país que vem crescendo econômica e culturalmente em anos recentes, podendo oferecer diversas oportunidades para os que desejam ir para lá. Considerando que o Brasil atualmente não reconhece o Kosovo como um país legítimo, no caso de você ser uma pessoa procurada pela lei, será impossível um pedido de extradição a nação balcânica, já que, para a república federativa, ela não existe. Caso você seja parte da comunidade LGBTQIA+, é válido informar que o Kosovo é um dos países da sua região mais progressistas nesse aspecto, com o seu presidente já deixando clara a sua intenção de legalizar o casamento de pessoas do mesmo gênero no país, o que o tornaria a terceira nação balcânica a fazer isso e a primeiro do mundo de maioria islâmica. </p>
-            <a action="tela de compra.html" method="get">
-            <button class="btn btn-success">Comprar</button>
-            </a>
-    </div>
-
-
-</div>
+  
+      <footer class="text-center py-4" style="background-color: #000000;">
+        <p class="m-0">&copy; 2024 POUSODEEMERGENCIA. Nenhum direito reservado.</p>
+    </footer>
+    </body>
+  </html>
+  

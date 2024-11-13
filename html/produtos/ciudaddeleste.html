@@ -40,7 +40,7 @@
       </div>
 </nav>
 
-<h1>Ciudad del Este</h1>
+<h1 class="display-3 animate__animated animate__zoomIn">Ciudad del Leste</h1>
 
 <div class="caixa">
     <div class="direita">
@@ -51,53 +51,48 @@
             <div class="imagembox"><img src="https://www.anvtravel.com.br/wp-content/uploads/2021/01/IMG-20200121-WA0000.jpg" class="imagem"></div>
             <div class="imagembox"><img src="https://elquarto.com/blog/wp-content/uploads/2024/01/Ciudad-del-Este.jpg" class="imagem"></div>
             <div class="imagembox"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/f8/c5/7f/tienda-monalisa.jpg?w=1200&h=-1&s=1" class="imagem"></div>
-
+</div>
 
         </div>
 
-    </div>
-    <div class="detalhes">
-        <h1> Passagem só de ida para Ciudad del Este, Paraguai</h1>
-        <p>Disponível</p>
-        <h2>R$100</h2>
-        <table cellspacing="0" class="enzo"> 
-            <tr>
-                <td>Quantidade</td>
-                <td align="right"><input type="number" id="primeiro"></td>
-            </tr>
-            <tr>
-                <td>Local de Partida</td>
-                <td align="right"> <select name="Partida" id="segundo">
-                    <option value="0" id="rj">Rio de Janeiro</option>
-                    <option value="0" id="sp">São Paulo</option>
-                    <option value="0" id="cu">Curitiba</option>
-                    <option value="0" id="pa">Porto Alegre</option>
-                    <option value="0" id="fl">Florianópolis</option>
-                    <option value="5" id="bh">Belo Horizonte</option>
-                    <option value="15" id="br">Brasília</option>
-                    <option value="25" id="br">Salvador</option>
-                    <option value="50" id="ma">Manaus</option>
-                  </select> </td>
-            </tr>
-            <tr>
-                <td>Valor Total</td>
-                <td align="right"><input type="number" id="terceiro"></td>
-            </tr>
-            
+        <div class="detalhes">
+          <h1 class="display-3 animate__animated animate__fadeInDown">Passagem só de ida para Ciudad del Este, Paraguai</h1>
+            <p class="lead animate__animated animate__fadeInUp">Disponível</p>
+            <h2 class="lead animate__animated animate__fadeInUp">R$100</h2>
+            <form class="img-fluid animate__animated animate__zoomIn" action="../tela de compra.html" onsubmit="calcularTotal()">
+                <table cellspacing="0" class="enzo">
+                    <tr>
+                        <td>Quantidade</td>
+                        <td align="right"><input type="number" id="quantidade" name="quantidade" required onchange="calcularTotal()"></td>
+                    </tr>
+                    <tr>
+                        <td>Data de Partida:</td>
+                        <td align="right"><input type="date" id="data" name="data" required></td>
+                  
+                      </tr>
+
+                </table> <br>
+
+                <!-- Campos hidden para passar o destino e o valor total -->
+                <input type="hidden" name="destino" value="Ciudad del Este, Paraguai">
+                <input type="hidden" id="valor" name="valor">
+                <input type="hidden" id="preco" name="preco" value="6424">
 
 
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115243.16613812385!2d-54.6716698!3d-25.4934066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f68499feb6b1d1%3A0xce33cb9eeb700b1e!2sCidade%20do%20Leste%2C%20Paraguai!5e0!3m2!1spt-BR!2sbr!4v1727834485830!5m2!1spt-BR!2sbr" 
+                      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h4>Descrição:</h4>
+                 <h6>País: <img src="http://www.flags.net/images/smallflags/PARA0001.GIF" alt="" width="25px"> Paraguai</h6>
+                <h6>Linguas: <img src="http://www.flags.net/images/smallflags/SPAN0001.GIF" alt="" width="25px"> Espanhol <img src="http://www.flags.net/images/smallflags/PARA0001.GIF" alt="" width="25px"> Guarani</h6> 
+                <p> Triste pela criminalização de jogos como o "Jogo do Tigrinho"? Por que não ir para Ciudad del Este, Paraguai, onde jogos de azar são completamente legais, por meio da Pouso de Emergência?  Apesar de por grande parte de sua história o país ter tido a venda ilegal de armas, drogas e aparelhos eletrônicos, nos anos recentes o Paraguai vem crescendo em áreas legais do comércio, como o agronegócio e a triangulação de produtos importados da China. Ciudad del Este é uma das principais áreas urbanas do Paraguai, sendo a terceira mais importante área de comércio livre do mundo. Fazendo fronteira com a Argentina e o Brasil, Ciudad del Este é o centro urbano perfeito para você que não quer ir para muito longe de casa mas ainda assim experienciar coisas novas, com o adendo de poder ir para outro país rapidamente em caso de riscos de segurança.</p>
 
-        </table> <br>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115243.16613812385!2d-54.6716698!3d-25.4934066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f68499feb6b1d1%3A0xce33cb9eeb700b1e!2sCidade%20do%20Leste%2C%20Paraguai!5e0!3m2!1spt-BR!2sbr!4v1727834485830!5m2!1spt-BR!2sbr" 
-                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <h4>Descrição:</h4>
-             <h6>País: <img src="http://www.flags.net/images/smallflags/PARA0001.GIF" alt="" width="25px"> Paraguai</h6>
-            <h6>Linguas: <img src="http://www.flags.net/images/smallflags/SPAN0001.GIF" alt="" width="25px"> Espanhol <img src="http://www.flags.net/images/smallflags/PARA0001.GIF" alt="" width="25px"> Guarani</h6> 
-            <p> Triste pela criminalização de jogos como o "Jogo do Tigrinho"? Por que não ir para Ciudad del Este, Paraguai, onde jogos de azar são completamente legais, por meio da Pouso de Emergência?  Apesar de por grande parte de sua história o país ter tido a venda ilegal de armas, drogas e aparelhos eletrônicos, nos anos recentes o Paraguai vem crescendo em áreas legais do comércio, como o agronegócio e a triangulação de produtos importados da China. Ciudad del Este é uma das principais áreas urbanas do Paraguai, sendo a terceira mais importante área de comércio livre do mundo. Fazendo fronteira com a Argentina e o Brasil, Ciudad del Este é o centro urbano perfeito para você que não quer ir para muito longe de casa mas ainda assim experienciar coisas novas, com o adendo de poder ir para outro país rapidamente em caso de riscos de segurança.</p>
-            <a action="tela de compra.html" method="get">
-            <button class="btn btn-success">Comprar</button>
-            </a>
-    </div>
+                <button type="submit" class="btn btn-success">Comprar</button>
+                </form>
+              </div>
+            </div>
 
-
-</div>
+    <footer class="text-center py-4" style="background-color: #000000;">
+      <p class="m-0">&copy; 2024 POUSODEEMERGENCIA. Nenhum direito reservado.</p>
+  </footer>
+  </body>
+</html>

@@ -41,14 +41,11 @@
 </nav>
 
 <body>
-    <div class="img fundo">
-    <h1>Faça seu cadastro:</h1>
-   </div> <br>
-   <div class="img fundo">
-  <form class = "pedro" style="color: white;" action="Pouso de Emergência.html" method="post" oninput="total.value = (noites.valueAsNumber * 250)
-+ ((hospede.valueAsNumber - 1) * 50)">
+  <div class="container text-center my-5">
+    <h1 class="display-3 animate__animated animate__fadeInDown">Faça seu cadastro</h1>
+   </div>
+   <form class="pedro" action="viagens.html" method="post">
 <fieldset>
-<legend>Informações Pessoais</legend>
     <div  class="campo">
 <label>Primeiro Nome:</label>
 <input type="text" id="nome" name="nome"
@@ -58,6 +55,7 @@ required>
 <div  class="campo">
     <label>Sobrenome:</label>
     <input type="text" id="nome" name="nome"
+    placeholder="Digite o sobrenome..." style="width: 20em"
     required>
     </div> <br>
 <div  class="campo">
@@ -252,13 +250,33 @@ required>
   <option value="zambiano">Zambiano</option>
   <option value="zimbabuense">Zimbabuense</option>
 </select>
-  <button  >Enviar</button>
+
+<div  class="campo">
+  <label>Email:</label>
+  <input type="email" id="email" name="email"
+  placeholder="Digite o email..." style="width: 20em"
+  required>
+  </div> <br>
+  <div  class="campo">
+    <label>Senha:</label>
+    <input type="password" id="senha" name="senha"
+    placeholder="Digite a senha..." style="width: 20em"
+    required>
+    </div> <br>
+<button  >Finalizar o cadastro</button>
 </fieldset>
 </form>
 
-</div>
+
+
 
 </div><br />
 
+</div> <br>
+</div>
+</div>
+    <footer class="text-center py-4" style="background-color: #000000;">
+      <p class="m-0">&copy; 2024 POUSODEEMERGENCIA. Nenhum direito reservado.</p>
+  </footer>
 </div>
 </body>
